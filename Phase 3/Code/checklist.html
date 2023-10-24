@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="checklist.js"></script>
+    <link rel="stylesheet" href="checklist.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <title>Travel Checklist Generator</title>
+    
+</head>
+<body>
+
+
+   
+    
+    <div class="container">
+        <h1>Personalized Travel Checklist Generator</h1>
+        <form id="travelForm">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" required>
+
+            <label for="departureDate">Departure Date:</label>
+            <input type="date" id="departureDate" required>
+
+            <label for="returnDate">Return Date:</label>
+            <input type="date" id="returnDate" required>
+
+            <label for="tripPurpose">Trip Purpose:</label>
+            <select id="tripPurpose">
+                <option value="vacation">Vacation</option>
+                <option value="business">Business</option>
+                <option value="adventure">Adventure</option>
+            </select>
+
+            <button type="button" onclick="generateChecklist()">Generate Checklist</button>
+        </form>
+
+    </div>
+    
+</body>
+</html>
